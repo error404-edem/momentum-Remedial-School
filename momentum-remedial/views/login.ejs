@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login – Momentum Remedial School</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h2>Momentum Admin Login</h2>
+  <% if (error) { %>
+    <p class="error"><%= error %></p>
+  <% } %>
+  <form action="/login" method="POST">
+    <label>Username:</label><br>
+    <input type="text" name="username" required><br>
+    <label>Password:</label><br>
+    <input type="password" name="password" required><br><br>
+    <button type="submit">Login</button>
+  </form>
+  <script src="/script.js"></script>
+</body>
+</html>

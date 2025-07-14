@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard – Momentum</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Dashboard – Momentum Remedial School</h1>
+  <p>Organiser: Joseph Kwaku Agbobli | 📍 Sogakope</p>
+  <p>Subjects: All Core & Elective | For: Pre SHS, SHS, Post SHS & Vacation Students</p>
+  <p>Contact: agboblielliot@gmail.com | 📞 0244982185</p>
+  <a href="/register">➕ Add New Student</a>
+  <h3>Registered Students:</h3>
+  <ul>
+    <% students.forEach(student => { %>
+      <li><strong><%= student.name %></strong> – Age: <%= student.age %>, Class: <%= student.classLevel %></li>
+    <% }) %>
+  </ul>
+  <script src="/script.js"></script>
+</body>
+</html>
